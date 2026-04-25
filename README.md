@@ -2,11 +2,15 @@
 
 向 STUN2 服务器请求 NAT 类型探测（STUN:Cone）和生存期探测（STUN:Live）。
 
+> **名识：**
+> 1. `stun2c-client`。
+> 2. SHA2.sum256("stun2c-client-v1")[:16] => `a019e1215ede007aea1cb5a2fb012f4b`（十六进制）。
+
 
 ## 用法（应用端）：
 
 - 创建一个 Client 实例。
-- 向基网查询STUN2服务节点，连接到STUN2服务子网（stun2-service）。
+- 向基网查询STUN2服务节点，连接到STUN2服务子网（stun2s-service）。
 - 向服务节点请求NAT相关服务：STUN:Addr|STUN:Cone|STUN:Live。
 
 > **注：**
